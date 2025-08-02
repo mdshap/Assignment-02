@@ -1,0 +1,131 @@
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*Colors Used*/
+.primary-color{
+    color: #E95A08;
+}
+.secondary-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.nav-1st-color{
+    color: #252432;
+}
+.nav-2nd-color{
+    color: #8987A1;
+}
+
+html{
+    background-color: #F5F8FF;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    font-family: "Noto Serif", serif;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.cart i {
+  font-size: 16px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #F5F8FF;
+}
+
+.hero-txt{
+    font-size: 1.45rem;
+}
+.hero-txt h1{
+    font-size: 4rem;
+    color: #252432;
+}
+
+@media screen and (max-width: 576px) {
+    .hero-banner {
+        flex-direction: row-reverse, column;
+        align-items: ro;
+        text-align: center;
+    }
+    .hero-txt h1 {
+        font-size: 2.5rem;
+    }
+    .hero-txt p {
+        font-size: 1.2rem;
+    }
+    .hero-banner img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+/*Our Plants Section*/
+main{
+    text-align: center;
+    margin: 0 auto;
+}
+
+main > h2{
+    font-size: 3.5rem;
+    margin: 80px 0px 0px 0px;
+    color: #252432;
+}
+
+main > p{
+    font-size: 1.45rem;
+    margin-bottom: 80px;
+}
+
