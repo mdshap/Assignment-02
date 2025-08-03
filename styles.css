@@ -282,6 +282,10 @@ main > p{
     .lover-txt {
         margin-bottom: 20px;
     }
- 
+
+    .lover-img img {
+        width: 100%;
+        height: auto;
+    }
     
 }
