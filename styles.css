@@ -239,6 +239,12 @@ main > p{
 }
 
 /*Flower & Plants Lover Section*/
+.badge{
+    width: 284px;
+    margin-bottom: -320px;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.0);
+}
 .lover-section {
     margin-top: 180px;
     display: flex;
@@ -288,4 +294,10 @@ main > p{
         height: auto;
     }
     
+}
+
+@media screen and (max-width: 576px) {
+    .badge{
+        display: none;
+    }
 }
