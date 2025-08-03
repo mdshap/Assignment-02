@@ -237,3 +237,30 @@ main > p{
  
     
 }
+
+/*Flower & Plants Lover Section*/
+.lover-section {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 1140px;
+}
+
+.lover-txt{
+    text-align: start;
+
+}
+
+.lover-txt h2 {
+    font-size: 3.5rem;
+    color: #252432;
+    margin: 0px 20px;
+}
+
+.lover-txt ul li{
+    font-size: 1.4rem;
+    color: #8987A1;
+    margin-top: 20px;
+}
