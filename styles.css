@@ -58,6 +58,7 @@ h1, h2, h4, h5, h6 {
     font-weight: 600;
     font-family: "Noto Serif", serif;
 }
+
 body{
     max-width: 1200px;
     margin: 0 auto;
@@ -97,7 +98,7 @@ body{
 
 /* Hero Banner */
 .hero-banner {
-  width: 100%;
+  width: calc(100% -80px);
   margin-top: 130px;
   display: flex;
   justify-content: space-between;
@@ -165,7 +166,7 @@ body{
 /*Our Plants Section*/
 main{
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     
     
@@ -219,6 +220,10 @@ main > p{
 }
 
 @media screen and (max-width: 576px) {
+
+    main{
+        width: 90%;
+    }
     .flower-section {
         grid-template-columns: repeat(2, 1fr);
         align-content: center;
@@ -241,16 +246,19 @@ main > p{
 /*Flower & Plants Lover Section*/
 .badge{
     width: 284px;
-    margin-bottom: -320px;
+    margin-bottom: -340px;
+    margin-left: -200px;
     position: relative;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.0);
 }
 .lover-section {
     margin-top: 180px;
+    margin-bottom: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    max-width: 1140px;
 }
 
 .lover-txt{
@@ -293,6 +301,10 @@ main > p{
         width: 100%;
         height: auto;
     }
+
+    .badge{
+        margin-right: -500px;
+    }
     
 }
 
@@ -301,3 +313,130 @@ main > p{
         display: none;
     }
 }
+
+/*Latest Deals Section*/
+.latest-deals{
+    width: 1200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.latest-deal-txt{
+    text-align: center;
+    margin-top: 100px;
+    margin: 0 auto;
+}
+
+.latest-deal-txt > h2{
+    font-size: 3.5rem;
+    margin: 80px 0px 0px 0px;
+    color: #252432;
+}
+
+.latest-deal-txt > p{
+    font-size: 1.45rem;
+    margin-bottom: 80px;
+}
+
+.latest-img-section{
+    display: flex;
+    gap: 28px;
+}
+
+.col1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.row1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('images/deal-bloom.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 50%; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 366px;   
+    border-radius: 14px;                      
+}
+
+.row2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('images/deal-ana.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 50%; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    border-radius: 14px;
+}
+
+.col2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('images/deal-zabo.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 425px; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    border-radius: 22px;
+}
+
+.row1 h2, .row2 h2{
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.row1 p, .row2 p{
+    font-size: 1rem;
+}
+
+.col2 h2{
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.col2 p{
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 576px) {
+    .latest-img-section{
+        display: grid;
+    }
+    .row1, .row2{
+        width: 100%;
+        height: 200px;
+    }
+
+    .col2{
+        width: 100%;
+        height: 200px;
+    }
+
+    .col2 h2{
+        font-size: 1.25rem;
+    }
+    .col2 p{
+        font-size: 1rem;
+    }
+}
+
+
