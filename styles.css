@@ -30,11 +30,31 @@
     color: #8987A1;
 }
 
-html{
-    background-color: #F5F8FF;
+.nav-1st-color:hover, .nav-2nd-color:hover {
+    color: #E95A08;
 }
 
-h1, h2, h3, h4, h5, h6{
+.btn-primary{
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.btn-primary:hover{
+    background-color: #60c359;
+}
+
+
+html{
+    background-color: #F5F8FF;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h4, h5, h6 {
     font-weight: 600;
     font-family: "Noto Serif", serif;
 }
@@ -46,11 +66,14 @@ body{
 .nav-bar {
     display: flex;
     align-items: center;
-    padding: 20px;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 20px;
 }
 
+.logo img{
+    width: 120px;
+
+}
 
 .nav-links ul{
     display: flex;
@@ -64,20 +87,18 @@ body{
     font-weight: 500;
 }
 
+
 .cart {
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
 }
 
-.cart i {
-  font-size: 16px;
-}
 
 /* Hero Banner */
 .hero-banner {
-    margin-top: 180px;
+  width: 100%;
+  margin-top: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,35 +108,67 @@ body{
 
 .hero-txt{
     font-size: 1.45rem;
+    padding: 0px 20px;
 }
 .hero-txt h1{
     font-size: 4rem;
     color: #252432;
 }
 
+
 @media screen and (max-width: 576px) {
     .hero-banner {
-        flex-direction: row-reverse, column;
-        align-items: ro;
-        text-align: center;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: none;
+        margin-top: 20px;
+        padding: 0px;
     }
     .hero-txt h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .hero-txt p {
         font-size: 1.2rem;
     }
-    .hero-banner img {
+    .hero-img{
         width: 100%;
-        height: auto;
     }
-    
+    .hide-on-mobile {
+        display: none;
+    }
+    .cart{
+        font-size: 20px;
+    }
+    .fas.fa-shopping-cart {
+        font-size: 20px;
+    }
+    .nav-bar img{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .hero-banner{
+        width: 70%;
+    }
+    .hero-txt h1{
+        font-size: 3rem;
+    }
+    .hero-txt p{
+        font-size: 1.2rem;
+    }
+
+    .hero-banner img {
+    }
 }
 
 /*Our Plants Section*/
 main{
     text-align: center;
+    width: 90%;
     margin: 0 auto;
+    
+    
 }
 
 main > h2{
@@ -129,3 +182,58 @@ main > p{
     margin-bottom: 80px;
 }
 
+.flower-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+    
+}
+
+.card h3{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: medium;
+}
+
+.card p{
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .flower-section {
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .flower-section {
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img{
+        width: 100%;
+    }
+ 
+    
+}
