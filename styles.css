@@ -64,6 +64,18 @@ body{
     margin: 0 auto;
 }
 
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -104,22 +116,23 @@ body{
 
 /* Hero Banner */
 .hero-banner {
-  width: calc(100% -80px);
+  width: calc(100%);
   margin-top: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
   background-color: #F5F8FF;
 }
 
 .hero-txt{
     font-size: 1.45rem;
-    padding: 0px 20px;
+    padding-left: 20px;
 }
+
 .hero-txt h1{
     font-size: 4rem;
     color: #252432;
+    margin-bottom: 0px;
 }
 
 
@@ -132,10 +145,10 @@ body{
         padding: 0px;
     }
     .hero-txt h1 {
-        font-size: 3rem;
+        font-size: 1.75rem;
     }
     .hero-txt p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .hero-img{
         width: 100%;
@@ -192,14 +205,6 @@ body{
 }
 
 /*Our Plants Section*/
-main{
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    
-    
-}
 
 main > h2{
     font-size: 3.5rem;
@@ -222,7 +227,7 @@ main > p{
 .card h3{
     font-family: "Inter", sans-serif;
     font-size: 22px;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 .card p{
@@ -253,6 +258,18 @@ main > p{
     main{
         width: 90%;
     }
+
+    main > h2{
+    font-size: 1.75rem;
+    margin: 80px 0px 0px 0px;
+    color: #252432;
+    }
+
+    main > p{
+    font-size: 1rem;
+    margin-bottom: 80px;
+    }
+
     .flower-section {
         grid-template-columns: repeat(2, 1fr);
         align-content: center;
@@ -267,6 +284,15 @@ main > p{
 
     .card img{
         width: 100%;
+    }
+
+    .card h3{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .card p{
+        font-size: 1.2rem;
     }
  
     
@@ -338,6 +364,13 @@ main > p{
 }
 
 @media screen and (max-width: 576px) {
+    .lover-txt h2 {
+    font-size: 1.75rem;
+    }
+    .lover-txt ul li {
+        font-size: 1rem;
+    }
+
     .badge{
         display: none;
     }
