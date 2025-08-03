@@ -143,6 +143,7 @@ main{
         align-items: none;
         margin-top: 20px;
         padding: 0px;
+        margin-bottom: -20px;
     }
     .hero-txt h1 {
         font-size: 1.75rem;
@@ -275,6 +276,7 @@ main > p{
         align-content: center;
         justify-content: center;
         align-items: center;
+        margin-top: -40px;
     }
     
     .hero-banner img {
@@ -318,7 +320,6 @@ main > p{
 
 .lover-txt{
     text-align: start;
-
 }
 
 .lover-txt h2 {
@@ -364,8 +365,13 @@ main > p{
 }
 
 @media screen and (max-width: 576px) {
+    .lover-section{
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
     .lover-txt h2 {
     font-size: 1.75rem;
+    margin: -30px 0px 0px 0px;
     }
     .lover-txt ul li {
         font-size: 1rem;
@@ -482,6 +488,14 @@ main > p{
 @media screen and (max-width: 576px) {
     .latest-img-section{
         display: grid;
+    }
+
+    .latest-deal-txt > h2{
+    font-size: 1.75rem;
+    }
+
+    .latest-deal-txt > p{
+        font-size: 1rem;
     }
     .row1, .row2{
         width: 100%;
