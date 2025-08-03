@@ -637,7 +637,6 @@ main > p{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    justify-content: ;
     font-size: 1.2rem;
 }
 
@@ -660,6 +659,42 @@ main > p{
         justify-items: left;
         gap: 36px;
         padding: 50px;
+    }
+    
+    .footer-container p{
+        font-size: 1.1rem;
+    }
+
+    .footer-container a{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        justify-items: left;
+        gap: 36px;
+        padding: 50px;
+    }
+    
+    .footer-col4 {
+        align-self: center;
+    }
+}
+
+@media screen and (min-width:579px) and (max-width: 767px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        justify-items: left;
+        gap: 36px;
+        padding: 50px;
+    }
+    
+    .footer-col4 {
+        align-self: center;
     }
     
 }
