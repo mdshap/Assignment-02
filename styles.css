@@ -263,3 +263,25 @@ main > p{
     color: #8987A1;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 992px) {
+    .lover-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .lover-txt h2 {
+        font-size: 2.5rem;
+    }
+    
+    .lover-txt ul li {
+        font-size: 1.2rem;
+    }
+    
+    .lover-txt {
+        margin-bottom: 20px;
+    }
+ 
+    
+}
